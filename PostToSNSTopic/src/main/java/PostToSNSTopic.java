@@ -15,7 +15,7 @@ public class PostToSNSTopic {
                 .build();
 
         String message = "Hello from Robeel's Java App!";
-        // topicArn will have to be changed from topic playground account to topic in my personal AWS account
+        // topicArn will have to be changed from topic in playground -> topic in personal AWS account
         String topicArn = "arn:aws:sns:us-east-1:367780398197:Testing-Topic";
         PublishRequest publishRequest = new PublishRequest(topicArn, message);
 
